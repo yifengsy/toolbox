@@ -1,0 +1,11 @@
+## Create own keytab
+
+ktutil
+
+addent -password -p ID@REALM -k 1 -e aes256-cts
+
+addent -password -p ID@REALM -k 1 -e arcfour-hmac
+
+wkt keytab_file_name.keytab
+
+quit
