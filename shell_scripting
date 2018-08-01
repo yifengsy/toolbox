@@ -9,3 +9,8 @@ addent -password -p ID@REALM -k 1 -e arcfour-hmac
 wkt keytab_file_name.keytab
 
 quit
+
+
+## set alias
+
+alias kinit=alias kinit='kinit ID@REALMM -k -t ~/keytab_file_name.keytab'
